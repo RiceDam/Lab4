@@ -10,6 +10,7 @@ Animal::Animal() {
     age = 0;
     x = 0;
     y = 0;
+    z = 0;
 }
 
 Animal::Animal(int age1, double x1, double y1) {
@@ -18,6 +19,7 @@ Animal::Animal(int age1, double x1, double y1) {
     age = age1;
     x = x1;
     y = y1;
+    z = 0;
 }
 
 void Animal::move(double x1, double y1) {
@@ -26,7 +28,8 @@ void Animal::move(double x1, double y1) {
 }
 
 ostream &operator<<(ostream &os, const Animal &ani) {
-    os << "ID: " << ani.id << " Age: " << ani.age << " Is Alive: " << ani.alive << " (X,Y): " << ani.x << " " << ani.y;
+    os << "Animal " << "ID: " << ani.id << " Age: " << ani.age << " Is Alive: "
+    << ani.alive << " (X,Y,Z): " << ani.x << " " << ani.y << " " << ani.z << endl;
     return os;
 }
 

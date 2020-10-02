@@ -170,6 +170,60 @@ animal.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/animal.cpp.s
 .PHONY : animal.cpp.s
 
+bird.o: bird.cpp.o
+
+.PHONY : bird.o
+
+# target to build an object file
+bird.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/bird.cpp.o
+.PHONY : bird.cpp.o
+
+bird.i: bird.cpp.i
+
+.PHONY : bird.i
+
+# target to preprocess a source file
+bird.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/bird.cpp.i
+.PHONY : bird.cpp.i
+
+bird.s: bird.cpp.s
+
+.PHONY : bird.s
+
+# target to generate assembly for a file
+bird.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/bird.cpp.s
+.PHONY : bird.cpp.s
+
+canine.o: canine.cpp.o
+
+.PHONY : canine.o
+
+# target to build an object file
+canine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/canine.cpp.o
+.PHONY : canine.cpp.o
+
+canine.i: canine.cpp.i
+
+.PHONY : canine.i
+
+# target to preprocess a source file
+canine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/canine.cpp.i
+.PHONY : canine.cpp.i
+
+canine.s: canine.cpp.s
+
+.PHONY : canine.s
+
+# target to generate assembly for a file
+canine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/canine.cpp.s
+.PHONY : canine.cpp.s
+
 inheritance.o: inheritance.cpp.o
 
 .PHONY : inheritance.o
@@ -209,6 +263,12 @@ help:
 	@echo "... animal.o"
 	@echo "... animal.i"
 	@echo "... animal.s"
+	@echo "... bird.o"
+	@echo "... bird.i"
+	@echo "... bird.s"
+	@echo "... canine.o"
+	@echo "... canine.i"
+	@echo "... canine.s"
 	@echo "... inheritance.o"
 	@echo "... inheritance.i"
 	@echo "... inheritance.s"

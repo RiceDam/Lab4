@@ -15,6 +15,7 @@ private:
     bool alive;
     double x;
     double y;
+    double z;
 public:
     static long counter;
     Animal();
