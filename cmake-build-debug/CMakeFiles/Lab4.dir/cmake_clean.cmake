@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Lab4.dir/main.cpp.o"
+  "CMakeFiles/Lab4.dir/animal.cpp.o"
+  "CMakeFiles/Lab4.dir/inheritance.cpp.o"
   "Lab4.exe"
   "Lab4.pdb"
   "libLab4.dll.a"

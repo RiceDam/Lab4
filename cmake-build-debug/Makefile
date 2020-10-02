@@ -143,32 +143,59 @@ Lab4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/build
 .PHONY : Lab4/fast
 
-main.o: main.cpp.o
+animal.o: animal.cpp.o
 
-.PHONY : main.o
+.PHONY : animal.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/main.cpp.o
-.PHONY : main.cpp.o
+animal.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/animal.cpp.o
+.PHONY : animal.cpp.o
 
-main.i: main.cpp.i
+animal.i: animal.cpp.i
 
-.PHONY : main.i
+.PHONY : animal.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/main.cpp.i
-.PHONY : main.cpp.i
+animal.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/animal.cpp.i
+.PHONY : animal.cpp.i
 
-main.s: main.cpp.s
+animal.s: animal.cpp.s
 
-.PHONY : main.s
+.PHONY : animal.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/main.cpp.s
-.PHONY : main.cpp.s
+animal.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/animal.cpp.s
+.PHONY : animal.cpp.s
+
+inheritance.o: inheritance.cpp.o
+
+.PHONY : inheritance.o
+
+# target to build an object file
+inheritance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/inheritance.cpp.o
+.PHONY : inheritance.cpp.o
+
+inheritance.i: inheritance.cpp.i
+
+.PHONY : inheritance.i
+
+# target to preprocess a source file
+inheritance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/inheritance.cpp.i
+.PHONY : inheritance.cpp.i
+
+inheritance.s: inheritance.cpp.s
+
+.PHONY : inheritance.s
+
+# target to generate assembly for a file
+inheritance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/inheritance.cpp.s
+.PHONY : inheritance.cpp.s
 
 # Help Target
 help:
@@ -179,9 +206,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Lab4"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... animal.o"
+	@echo "... animal.i"
+	@echo "... animal.s"
+	@echo "... inheritance.o"
+	@echo "... inheritance.i"
+	@echo "... inheritance.s"
 .PHONY : help
 
 
