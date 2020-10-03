@@ -45,7 +45,7 @@ void Canine::hunt(Animal *a) {
     double xDif = abs(a->getX() - x);
     double yDif = abs(a->getY() - y);
     double zDif = abs(a->getZ() - z);
-    if (xDif == 1 && yDif == 1 && zDif == 1) {
+    if (xDif <= 1 && yDif <= 1 && zDif <= 1) {
         a->setAlive(false);
         cout << "Hunt was successful" << endl;
     } else {
