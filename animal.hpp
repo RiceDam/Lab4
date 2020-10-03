@@ -9,9 +9,9 @@
 using namespace std;
 
 class Animal {
-private:
-    long id;
+protected:
     int age;
+    long id;
     bool alive;
     double x;
     double y;
@@ -20,13 +20,25 @@ public:
     static long counter;
     Animal();
     Animal(int age1, double x1, double y1);
-    void move(double x1, double y1);
+    virtual void move(double x1, double y1);
+    virtual void move (double x1, double y1, double z1);
     Animal(const Animal& ani);
     virtual ~Animal();
     virtual void sleep();
     virtual void eat();
     void setAlive(bool isAlive);
     friend ostream& operator <<(ostream& os, const Animal& ani);
+    int getAge();
+    long getID();
+    bool getAlive();
+    double getX();
+    double getY();
+    double getZ();
+    void setAge(int age);
+    void setId(long id);
+    void setX(double x);
+    void setY(double y);
+    void setZ(double z);
 };
 
 
